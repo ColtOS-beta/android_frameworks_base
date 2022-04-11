@@ -6212,6 +6212,11 @@ public final class Settings {
          */
         public static final String QS_TILE_SECONDARY_LABEL_SIZE = "qs_tile_secondary_label_size";
 
+	/**
+	 * @hide
+	 */
+	 public static final String ENABLE_TASKBAR = "enable_taskbar";
+
         /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
