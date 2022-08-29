@@ -239,6 +239,12 @@ public class ColtUtils {
                     Settings.System.QS_TILE_VERTICAL_LAYOUT,
                     0, UserHandle.USER_CURRENT) == 1;
         }
+        
+        public static float getQSTileLabelSize(Context context) {
+        return (float) Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.QS_TILE_LABEL_SIZE,
+                14, UserHandle.USER_CURRENT);
+        }
 
         public static boolean updateLayout(Context context) {
             final IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(ServiceManager.getService(
