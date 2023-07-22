@@ -184,9 +184,6 @@ public class NavigationBarView extends FrameLayout {
     private ViewGroup mNavigationBarContents = null;
     private boolean mBlockedGesturalNavigation;
 
-    @Nullable
-    private ViewGroup mNavigationBarContents = null;
-
     private class NavTransitionListener implements TransitionListener {
         private boolean mBackTransitioning;
         private boolean mHomeAppearing;
