@@ -6245,11 +6245,6 @@ public final class Settings {
         /**
          * @hide
          */
-        public static final String RECENTS_LOCKED_TASKS = "recents_locked_tasks";
-
-        /**
-         * @hide
-         */
         public static final String QS_UI_STYLE = "qs_ui_style";
 
         /**
