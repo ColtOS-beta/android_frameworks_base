@@ -223,8 +223,9 @@ public class BrightnessSliderController extends ViewController<BrightnessSliderV
             if (mListener != null) {
                 mListener.onChanged(mTracking, progress, false);
             }
-            mContext = mView.getContext();
-            triggerVibration(mContext, mTracking);
+            if (fromUser) {
+                triggerVibration(mView.getContext(), mTracking);
+            }
         }
 
         @Override
@@ -239,9 +240,8 @@ public class BrightnessSliderController extends ViewController<BrightnessSliderV
                 mMirrorController.showMirror();
                 mMirrorController.setLocationAndSize(mView);
             }
-            
-            mContext = mView.getContext();
-            triggerVibration(mContext, mTracking);
+
+            triggerVibration(mView.getContext(), mTracking);
         }
 
         @Override
