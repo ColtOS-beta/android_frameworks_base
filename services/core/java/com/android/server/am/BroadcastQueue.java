@@ -1832,6 +1832,14 @@ public final class BroadcastQueue {
             }
         }
 
+        if (!skip) {
+            if (app == null) {
+                if (mService.shouldSkipBootCompletedBroadcastForPackage(info.activityInfo.applicationInfo)) {
+                    skip = true;
+                }
+            }
+        }
+
         if (skip) {
             if (DEBUG_BROADCAST)  Slog.v(TAG_BROADCAST,
                     "Skipping delivery of ordered [" + mQueueName + "] "
