@@ -175,7 +175,6 @@ public class PhoneStatusBarPolicy
     private BluetoothController mBluetooth;
     private AlarmManager.AlarmClockInfo mNextAlarm;
 
-    private final Context mContext;
     private boolean mShowBluetoothBattery;
     private boolean mHideBluetooth;
 
